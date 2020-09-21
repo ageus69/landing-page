@@ -1,0 +1,106 @@
+body {
+    margin-bottom: 200px;
+    margin-top: 70px;
+}
+
+.cabeza {
+    
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    grid-template-columns: 100%;
+}
+
+.cabeza > div {  
+    margin: 20px;
+    text-align: center;
+    
+}
+
+.cuerpo {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 33% 33% 33%;
+    background-color: rgb(59, 77, 87);
+}
+
+.cuerpo > div {
+    
+    padding: 20px;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    width: 200px;
+    color: honeydew;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.cuerpo > div:hover{
+    background-color: slategray;   
+}
+
+.menu > li:hover{
+    background-color: slategray;   
+}
+
+.contactoList> li:hover{
+    background-color: slategray;   
+}
+
+.pie{   
+    background-color: rgb(59, 77, 87) ;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.menuContainer {
+    background-color: rgb(59, 77, 87);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+
+.menu {
+    font-size: 20px;
+    color: honeydew;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pieHeader {
+    font-size: 20px;
+    padding-left: 10px;
+    color: honeydew;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactoList {
+    font-size: 20px;
+    color: honeydew;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+li {
+    margin: 20px;
+    float: left;
+}
+
