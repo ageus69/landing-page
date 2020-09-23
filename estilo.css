@@ -38,31 +38,37 @@ body {
     padding: 20px;
     border-radius: 20px;
     margin: auto;
-    background-color: rgb(153, 153, 235);
+    background-color: rgb(59, 77, 87);
     width: 50%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;   
+    grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;  
+    font-size: 1.5vw; 
 }
 
 .formulario div button{
     width: 200px;
+    font-size: 1.5vw;
 }
 
 .formulario div{
     margin: 10px;
 }
 
+.formulario label{
+    color: cornsilk;
+}
+
 .formulario div input{
     width: 60%;
+    font-size: 1.5vw;
 }
 
 .formulario div textarea{
     width: 80%;
+    font-size: 1.5vw;
 }
 .servicios div{
-    height: 100%;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,6 +79,7 @@ body {
 
 #contactoh1{
     font-size: 2vw;
+    color: cornsilk;
 }
 
 #div0{
