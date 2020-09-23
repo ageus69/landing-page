@@ -1,51 +1,125 @@
 body {
     margin-bottom: 200px;
     margin-top: 70px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.cabeza {
-    
+.cabeza {    
     width: 90%;
     max-width: 1000px;
     margin: auto;
     display: grid;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
     grid-template-rows: 70% 30%;
     grid-template-columns: 100%;
 }
 
 .cabeza > div {  
     margin: 20px;
-    text-align: center;
-    
+    text-align: center;  
 }
 
-.cuerpo {
-    margin: auto;
-    width: 80%;
+.servicios {
+    text-align: center;
     display: grid;
-    justify-items: center;
-    align-content: center;
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 33% 33% 33%;
-    background-color: rgb(59, 77, 87);
+    width: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 15% 15% 15% 15% 15% 15%;
+    grid-template-areas: "div0" "div1" "div2" "div3" "div4" "div5" "div6";
+    grid-gap: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin: auto;
 }
 
-.cuerpo > div {
-    
+.formulario{
     padding: 20px;
-    margin-top: 20px;
-    display: block;
-    text-align: center;
-    font-size: 30px;
-    width: 200px;
-    color: honeydew;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    border-radius: 20px;
+    margin: auto;
+    background-color: rgb(153, 153, 235);
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;   
 }
 
-.cuerpo > div:hover{
-    background-color: slategray;   
+.formulario div button{
+    width: 200px;
 }
+
+.formulario div{
+    margin: 10px;
+}
+
+.formulario div input{
+    width: 60%;
+}
+
+.formulario div textarea{
+    width: 80%;
+}
+.servicios div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2vw;
+    border-radius: 30px;
+}
+
+#contactoh1{
+    font-size: 2vw;
+}
+
+#div0{
+    grid-area: div0;
+    font-size: 2vw;
+}
+#div1{   
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/img1.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: div1;
+}
+#div2{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/img2.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: div2;
+}
+#div3{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/img3.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: div3;
+}
+#div4{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/img4.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: div4;
+}
+#div5{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/img5.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: div5;
+}
+#div6{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/img6.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: div6;
+}
+
+.servicios div{
+    height: 80vh;
+}
+
 
 .menu > li:hover{
     background-color: slategray;   
@@ -99,8 +173,21 @@ ul {
     overflow: hidden;
   }
 
+a {
+    text-decoration: none;
+    color: honeydew;
+}
+
 li {
-    margin: 20px;
+    padding: 10px;
     float: left;
 }
 
+
+
+@media only screen and (max-width: 720px) {
+    .servicios {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}

@@ -7,46 +7,83 @@
     </head>
 
     <body>
-
+        
+        <!--Navegation bar-->
         <div class="menuContainer">
             <div>
                 <ul class="menu">
-                    <li>Home</li>
-                    <li>About</li>
+                    <li> <a href="#parte1">Aurbana</a> </li>
+                    <li> <a href="#parte2">Servicios</a> </li>
+                    <li> <a href="#parte3">Contacto</a> </li>
                 </ul>
             </div>
         </div>
 
-        <div class="cabeza">
-            <div>  <img src="logo.png" width="500px"> </div>
-            <div style="align-self: center; 
-            font-size: 50px; 
-            margin-top: 50px; 
-            font-family: Arial, Helvetica, sans-serif;
-            margin-bottom: 50px;">Construyendo la ciudad</div>
+
+        <!--Lugar donde va el logo y el slogan-->
+        <div class="cabeza" id="parte1">
+            <div>  
+                <img src="logo.png" width="50%"> </div>
+                <div style="align-self: center; font-size: 40px; margin-top: 25px; font-family: Arial, Helvetica, sans-serif;
+                margin-bottom: 40px;">Construyendo la ciudad</div>
+        </div>
+        <hr> <!--Separación-->
+
+        <!--Servicios-->
+        <div class="servicios" id="parte2"> 
+            <h1 id="div0">Servicios</h1>
+                <div id="div1"><h2>Diseño Arquitectonico</h2></div>
+                <div id="div2"><h2>Construcción</h2></div>
+                <div id="div3"><h2>Ingeniería de costos</h2></div>
+                <div id="div4"><h2>Administración de obra</h2></div>
+                <div id="div5"><h2>Supervisión</h2></div>
+                <div id="div6"><h2>Asesoría y capacitación</h2></div> 
         </div>
 
-        <h1 style="font-family: Arial, Helvetica, sans-serif; text-align: center; margin-top: 200px;">Servicios</h1>     
-            <div class="cuerpo">
-                
-                <div>Diseño Arquitectónico</div>
-                <div>Construcción</div>
-                <div>Ingeniería de costos</div>
-                <div>Administración de obra</div>
-                <div>Supervisión</div>
-                <div>Asesoría y capacitación</div>
-                
+        <!--Formulario-->
+        <div class="formulario" id="parte3">
+            <h1 id="contactoh1">Contacto</h1>
+
+            <div id="nombreLabel">  
+                <label>Nombre</label>  
             </div>
 
+            <div id="nombreInput">  
+                <input type="text" name="nombre"> 
+            </div> 
+
+            <div id="correoLabel">  
+                <label>Correo</label>   
+            </div>
+
+            <div id="correoInput">  
+                <input type="email" name="correo">    
+            </div> 
+
+            <div id="mensajeLabel"> 
+                <label>Mensaje</label>  
+            </div>
+
+            <div id="mensajeTextArea">  
+                <textarea>Mensaje</textarea>    
+            </div>
+
+            <div id="button"> 
+                <button>Enviar</button>
+            </div>
+
+        </div>
+
+        <!--Mi footer-->
         <div class="pie">
-            <h1 class="pieHeader">Contacto</h1>    
+            <h1 class="pieHeader">Redes Sociales</h1>    
                 <hr>
                     <div>
                         <ul class="contactoList">
-                            <li>Facebook</li>
-                            <li>Instragram</li>
-                            <li>Whatsapp</li>
-                            <li>Twiter</li>
+                            <li><a href="https://www.facebook.com/aurbanamx/">Facebook</a></li>
+                            <li><a href="https://instagram.com/aurbanamx/">Instragram</a></li>
+                            <li><a href="https://wa.me/523328504818">Whatsapp</a></li>
+                            <li><a href="https://twitter.com/aurbanamx/">Twitter</a></li>
                         </ul>
                     </div>
         </div>
