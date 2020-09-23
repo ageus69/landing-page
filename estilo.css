@@ -24,8 +24,7 @@ body {
 .servicios {
     text-align: center;
     display: grid;
-    width: 80%;
-    height: 60%;
+    width: 95%;
     grid-template-columns: 1fr;
     grid-template-rows: .05fr 2fr 2fr 2fr 2fr 2fr 2fr;
     grid-template-areas: "div0" "div1" "div2" "div3" "div4" "div5" "div6";
@@ -37,14 +36,14 @@ body {
 }
 
 .formulario{
-    padding: 20px;
+    padding: 5px;
     border-radius: 20px;
     margin: auto;
     background-color: rgb(59, 77, 87);
-    width: 50%;
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;  
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;  
     font-size: 1.5vw; 
 }
 
@@ -91,7 +90,8 @@ body {
 #div1{   
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(img/img1.jpg);
     background-position: center;
-    background-size: cover;
+    
+    background-size: 50%;
     grid-area: div1;
 }
 #div2{
@@ -126,7 +126,7 @@ body {
 }
 
 .servicios div{
-    height: 80vh;
+    
 }
 
 
@@ -193,9 +193,3 @@ li {
 
 
 
-@media only screen and (max-width: 720px) {
-    .servicios {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-}
